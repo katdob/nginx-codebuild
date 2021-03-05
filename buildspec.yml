@@ -35,3 +35,5 @@ phases:
       - printf '[{"name":"nginx","imageUri":"%s"}]' "$IMAGE_URI" > images.json
 artifacts:
   files: images.json
+  source type: CODEPIPELINE
+  artifact type: CODEPIPELINE
